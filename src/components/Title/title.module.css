@@ -1,0 +1,36 @@
+.title {
+  display: flex;
+  padding: 80px 162px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background: rgb(7, 7, 8);
+}
+
+.imagetitle {
+  top: 0;
+  position: absolute;
+  right: 41%;
+}
+
+.nameDiv,
+.textLetswork,
+.textwork {
+  font-family: Manrope;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #e4e4e6;
+}
+
+.nameDivSpan {
+  color: rgb(121, 124, 134);
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}

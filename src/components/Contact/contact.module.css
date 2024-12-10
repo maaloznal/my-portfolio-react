@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.contact a {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  color: white;
+}
+
+.contact a:hover {
+  background: var(--Dark-08, #131316);
+}
