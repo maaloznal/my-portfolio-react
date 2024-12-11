@@ -1,7 +1,6 @@
 .title {
   display: flex;
   padding: 80px 162px;
-  align-items: center;
   justify-content: space-between;
   position: relative;
   background: rgb(7, 7, 8);
@@ -11,6 +10,14 @@
   top: 0;
   position: absolute;
   right: 41%;
+  z-index: 100;
+}
+
+.nameDivContainer {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  width: 33%;
 }
 
 .nameDiv,
@@ -23,6 +30,12 @@
   line-height: normal;
   text-transform: uppercase;
   color: #e4e4e6;
+  margin: 0;
+}
+
+.textLetswork,
+.textwork {
+  font-size: 58px;
 }
 
 .nameDivSpan {
@@ -33,4 +46,23 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.nameDiv {
+  margin: 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textAndBtn {
+  display: flex;
+  align-items: center;
+}
+
+.btnLetswork {
+  border-radius: 100px;
+  box-shadow: 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28) inset;
+  background: #4a2ced;
+  padding: 18px 50px;
 }
