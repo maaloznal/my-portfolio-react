@@ -1,4 +1,6 @@
 import { FC, useEffect, useState } from "react";
+import s from "./data.module.css";
+import imageData from "../../../public/icondata.svg";
 
 interface SteckData {
   id: number;
@@ -28,11 +30,22 @@ const Data: FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className={s.dataDiv}>
       {error && <p>{error}</p>}
-      <ul>
+      <ul className={s.dataUl}>
         {steck.map((item) => (
-          <li key={item.id}>{item.name}</li>
+          <li className={s.dataLi} key={item.id}>
+            <img src={imageData} alt="icon" />
+            {item.name}
+          </li>
+        ))}
+      </ul>
+      <ul className={s.dataUl}>
+        {steck.map((item) => (
+          <li className={s.dataLi} key={item.id}>
+            <img src={imageData} alt="icon" />
+            {item.name}
+          </li>
         ))}
       </ul>
     </div>
