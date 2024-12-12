@@ -1,0 +1,268 @@
+body {
+  box-sizing: border-box;
+}
+
+.aboutTitle {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 162px;
+  padding-right: 162px;
+}
+
+.aboutName {
+  color: white;
+}
+
+.aboutSpan {
+  color: #797c86;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.aboutH2 {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.knowMore {
+  display: flex;
+  background: #000;
+  align-items: center;
+}
+
+.knowMore a {
+  color: rgb(0, 0, 0);
+}
+
+.aboutMain {
+  display: grid;
+  column-gap: 30px;
+  padding-top: 80px;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  background: #000;
+  color: white;
+}
+
+.imageProfile {
+  width: 763px;
+  height: 763px;
+}
+
+.introduction {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.introductionContainer {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  border-bottom: 1px solid #1c1c21;
+}
+
+.introContainerMain {
+  margin: 0px auto 0px auto;
+  display: flex;
+  padding: 0px 20px 0px 0px;
+  max-width: 1596px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.introContainer {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.introductionTitle {
+  color: #cacace;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.introductionText {
+  color: #afb0b6;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.imageContainerProfil {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.allContactDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.contInf {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.contInfContainer {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  border-bottom: 1px solid #1c1c21;
+}
+
+.contInfTitle {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.contInfTextTitle {
+  color: #cacace;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.contData {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.contDataEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
+.emailTitle {
+  color: #e4e4e6;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+
+.emailContact {
+  color: #afb0b6;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+.contDataNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
+.numberTitle {
+  color: #e4e4e6;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+
+.numberContact {
+  color: #afb0b6;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+.contDataSocMedia {
+  width: 100%;
+  column-gap: 60px;
+  align-items: center;
+  display: flex;
+}
+
+.socMedia {
+  border: 1px solid rgb(28, 28, 33);
+  display: flex;
+  column-gap: 16px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 100px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.iconSocMedia {
+  display: flex;
+  padding: 14px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid #2f2f37;
+  background: var(--Dark-12, #1c1c21);
+}
+
+.socMediaBtn {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  padding: 18px 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #2f2f37;
+  background: #1c1c21;
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
