@@ -4,4 +4,11 @@ a {
   transition: all 200ms 0ms linear;
   text-decoration: none;
   color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  /* max-width: 1596px;
+  margin: 0 auto; */
 }

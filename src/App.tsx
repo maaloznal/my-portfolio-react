@@ -4,6 +4,7 @@ import Data from './components/Data/data'
 import Header from './components/Header/header'
 import RenderImage from './components/RenderImg/RenderImg'
 import Title from './components/Title/Title'
+import Development from './components/Development/Development'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Data />
       <RenderImage />
       <About />
+      <Development />
     </>
   )
 }

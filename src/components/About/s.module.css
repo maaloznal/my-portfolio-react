@@ -47,6 +47,8 @@ body {
 }
 
 .aboutMain {
+  margin: 0 auto;
+  max-width: 1596px;
   display: grid;
   column-gap: 30px;
   padding-top: 80px;
@@ -54,11 +56,11 @@ body {
   grid-template-columns: 1fr 1fr;
   background: #000;
   color: white;
+  padding-bottom: 50px;
 }
 
 .imageProfile {
   width: 763px;
-  height: 763px;
 }
 
 .introduction {
@@ -79,12 +81,15 @@ body {
 }
 
 .introContainerMain {
-  margin: 0px auto 0px auto;
   display: flex;
-  padding: 0px 20px 0px 0px;
   max-width: 1596px;
   flex-direction: column;
   justify-content: flex-end;
+  color: rgb(121, 124, 134);
+  border: 1px solid rgb(28, 28, 33);
+  align-self: center;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .introContainer {
@@ -115,7 +120,7 @@ body {
 
 .imageContainerProfil {
   display: flex;
-  justify-content: flex-end;
+  align-self: center;
 }
 
 .allContactDiv {
@@ -127,7 +132,7 @@ body {
 }
 
 .contInf {
-  padding-bottom: 50px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,6 +171,10 @@ body {
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
+  display: flex;
+  column-gap: 120px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .contDataEmail {

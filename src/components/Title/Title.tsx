@@ -1,6 +1,6 @@
 import imageTitle from "../../../public/Vector_1.svg";
-import workUrl from "../../../public/letsworkicon.svg";
 import titleStyle from "./title.module.css";
+import workUrl from "../../../public/letsworkicon.svg";
 
 const Title = () => {
   return (
