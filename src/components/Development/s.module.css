@@ -1,6 +1,7 @@
 .mainCont {
   max-width: 1596px;
   margin: 0 auto;
+  padding: 0 20px; 
 }
 
 .developmentMainContainer {
@@ -8,6 +9,7 @@
   column-gap: 50px;
   margin-top: 80px;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 80px;
 }
 
 .developmentDescription {
@@ -52,12 +54,15 @@
 }
 
 .serviceMainSpan {
+  display: flex;
   color: var(--Grey-80, #cacace);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .serviceHighlights {
@@ -66,6 +71,7 @@
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
+  margin-top: 20px;
 }
 
 .serviceDiv {
@@ -89,4 +95,42 @@
 .developmentMainImage {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .developmentMainContainer {
+    grid-template-columns: 1fr;
+    row-gap: 30px; 
+  }
+
+  .developmentDescriptionTitle {
+    font-size: 36px; 
+  }
+
+  .developmentDescriptionTextParagraph {
+    font-size: 16px; 
+  }
+
+  .serviceDiv {
+    font-size: 16px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .developmentDescriptionTitle {
+    font-size: 28px; 
+  }
+
+  .developmentDescriptionTextParagraph {
+    font-size: 14px; 
+  }
+
+  .serviceDiv {
+    font-size: 14px; 
+    padding: 12px 16px; 
+  }
+
+  .serviceMainSpan {
+    font-size: 16px; 
+  }
 }

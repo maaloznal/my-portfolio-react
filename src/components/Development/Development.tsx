@@ -25,6 +25,7 @@ const Development = () => {
               closely with you to ensure the result meets your needs and
               expectations.
             </p>
+            
             <span className={s.serviceMainSpan}>Service Highlights</span>
           </div>
 

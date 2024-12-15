@@ -5,6 +5,7 @@ import Header from './components/Header/header'
 import RenderImage from './components/RenderImg/RenderImg'
 import Title from './components/Title/Title'
 import Development from './components/Development/Development'
+import Portfolio from './components/Portfolio/Portfolio'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <RenderImage />
       <About />
       <Development />
+      <Portfolio />
     </>
   )
 }

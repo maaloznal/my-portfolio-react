@@ -30,7 +30,6 @@ const About = () => {
           />
         </div>
         <div className={s.introContainerMain}>
-          {/* <div className={s.introContainer}> */}
             <div className={s.introductionContainer}>
               <div className={s.introduction}>
                 <img src={introductIcon} alt="introduction" />
@@ -49,9 +48,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-          {/* </div> */}
           <div className={s.contInf}>
-            {/* <div className={s.contInfContainer}> */}
               <div className={s.contInfTitle}>
                 <img src={introductIcon} alt="introduction" />
                 <span className={s.contInfTextTitle}>Contact Information</span>
@@ -87,7 +84,6 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            {/* </div> */}
           </div>
         </div>
       </div>

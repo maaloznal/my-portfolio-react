@@ -1,5 +1,7 @@
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutTitle {
@@ -60,7 +62,8 @@ body {
 }
 
 .imageProfile {
-  width: 763px;
+  width: 100%;
+  max-width: 763px;
 }
 
 .introduction {
@@ -274,4 +277,70 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 27px */
+}
+
+@media (max-width: 1024px) {
+  .aboutTitle {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .aboutH2 {
+    font-size: 48px;
+  }
+
+  .aboutMain {
+    grid-template-columns: 1fr;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .contData {
+    column-gap: 60px;
+  }
+
+  .socMediaBtn {
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutTitle {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .aboutH2 {
+    font-size: 36px;
+  }
+
+  .aboutMain {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .introductionTitle {
+    font-size: 24px;
+  }
+
+  .introductionText {
+    font-size: 16px;
+  }
+
+  .contData {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .socMediaBtn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .contDataSocMedia {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
