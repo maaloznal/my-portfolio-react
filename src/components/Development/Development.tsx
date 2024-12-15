@@ -5,6 +5,21 @@ import developmentIcon from "../../../public/developmentIcon.svg";
 import workUrl from "../../../public/letsworkicon.svg";
 import developmentImage from "../../../public/developmentImage.jpeg";
 
+const serviceHighlightsData: { text: string }[] = [
+  {
+    text: "Development of websites, software, and other projects.",
+  },
+  {
+    text: "I know how to bring your ideas to life.",
+  },
+  {
+    text: "A flexible approach to development, including the creation of custom solutions.",
+  },
+  {
+    text: "Fast and high-quality results for your project.",
+  },
+];
+
 const Development = () => {
   return (
     <div className={s.mainCont}>
@@ -25,36 +40,24 @@ const Development = () => {
               closely with you to ensure the result meets your needs and
               expectations.
             </p>
-            
+
             <span className={s.serviceMainSpan}>Service Highlights</span>
           </div>
 
           <div className={s.serviceHighlights}>
-            <div className={s.serviceDiv}>
-              <img src={developmentIcon} alt="icon" />
-              <span className={s.servicesHighlightsText}>
-                Development of websites, software, and other projects.
-              </span>
-            </div>
-            <div className={s.serviceDiv}>
-              <img src={developmentIcon} alt="icon" />
-              <span className={s.servicesHighlightsText}>
-                I know how to bring your ideas to life.
-              </span>
-            </div>
-            <div className={s.serviceDiv}>
-              <img src={developmentIcon} alt="icon" />
-              <span className={s.servicesHighlightsText}>
-                A flexible approach to development, including the creation of
-                custom solutions.
-              </span>
-            </div>
-            <div className={s.serviceDiv}>
-              <img src={developmentIcon} alt="icon" />
-              <span className={s.servicesHighlightsText}>
-                Fast and high-quality results for your project.
-              </span>
-            </div>
+            {serviceHighlightsData.map(
+              (
+                item: {
+                  text: string;
+                },
+                index: number
+              ) => (
+                <div className={s.serviceDiv} key={index}>
+                  <img src={developmentIcon} alt="icon" />
+                  <span className={s.servicesHighlightsText}>{item.text}</span>
+                </div>
+              )
+            )}
           </div>
         </div>
         <div className={s.developmentMainImage}>

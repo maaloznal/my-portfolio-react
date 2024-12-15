@@ -7,21 +7,50 @@ import fakestore from "../../../public/fakestore.png";
 import myLibPortfolio from "../../../public/myLibPortfolio.png";
 import viewProjectArrow from "../../../public/viewProjectArrow.svg";
 
+const projects = [
+  {
+    name: "TealuxE",
+    date: "October 2024",
+    image: Layout,
+    link: "https://maaloznal.github.io/layout/",
+  },
+  {
+    name: "Fake Store",
+    date: "November 2024",
+    image: fakestore,
+    link: "https://maaloznal.github.io/Fake-Store/",
+  },
+  {
+    name: "My Library",
+    date: "October 2024",
+    image: myLibPortfolio,
+    link: "https://maaloznal.github.io/mylibrary/",
+  },
+];
+
 const Portfolio = () => {
   return (
     <div className={s.PortfolioSection}>
       <div className={s.PhotoWorkMainDiv}>
         <div className={s.PhotoWorkTitle}>
           <span className={s.PhotoWorkSpan}>Portfolio</span>
-          <h2 className={s.PhotoWorkText}>Explore My Development work</h2>
+          <h2 className={s.PhotoWorkText}>Explore My Development Work</h2>
         </div>
         <div className={s.PhotoWorkButtons}>
           <div className={s.PhotoWorkBtnArrows}>
             <div className={s.PortfolioArrowBtn}>
-              <img src={PortfolioArrowRight} alt="icon" />
+              <img
+                className={s.PortfolioArray}
+                src={PortfolioArrowRight}
+                alt="icon"
+              />
             </div>
             <div className={s.PortfolioArrowBtn}>
-              <img src={PortfolioArrowLeft} alt="icon" />
+              <img
+                className={s.PortfolioArray}
+                src={PortfolioArrowLeft}
+                alt="icon"
+              />
             </div>
           </div>
           <div className={s.PhotoWorkBtnViewServices}>
@@ -31,71 +60,29 @@ const Portfolio = () => {
       </div>
 
       <div className={s.PortfolioImageWorkMainDiv}>
-        <div className={s.ImageCardMain}>
-          <div className={s.ImageDivCard}>
-            <img className={s.ImageDiv} src={Layout} alt="image" />
-          </div>
-          <div className={s.ImageDescriptionMainDiv}>
-            <div className={s.ImageDescriptionNameAndData}>
-              <span className={s.NamePhoto}>ToDo List</span>
-              <span className={s.DatePhoto}>October 2024</span>
+        {projects.map((project, index) => (
+          <div className={s.ImageCardMain} key={index}>
+            <div className={s.ImageDivCard}>
+              <img className={s.ImageDiv} src={project.image} alt="image" />
             </div>
-            <div className={s.ViewProjectMainDiv}>
-              <a className={s.ViewProject}>
-                <span className={s.ViewProjectText}>View Project</span>
-                <img
-                  className={s.ViewProjectImage}
-                  src={viewProjectArrow}
-                  alt="img"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={s.ImageCardMain}>
-          <div className={s.ImageDivCard}>
-            <img className={s.ImageDiv} src={fakestore} alt="image" />
-          </div>
-          <div className={s.ImageDescriptionMainDiv}>
-            <div className={s.ImageDescriptionNameAndData}>
-              <span className={s.NamePhoto}>Fake Store</span>
-              <span className={s.DatePhoto}>November 2024</span>
-            </div>
-            <div className={s.ViewProjectMainDiv}>
-              <a className={s.ViewProject}>
-                <span className={s.ViewProjectText}>View Project</span>
-                <img
-                  className={s.ViewProjectImage}
-                  src={viewProjectArrow}
-                  alt="img"
-                />
-              </a>
+            <div className={s.ImageDescriptionMainDiv}>
+              <div className={s.ImageDescriptionNameAndData}>
+                <span className={s.NamePhoto}>{project.name}</span>
+                <span className={s.DatePhoto}>{project.date}</span>
+              </div>
+              <div className={s.ViewProjectMainDiv}>
+                <a className={s.ViewProject} href={project.link}>
+                  <span className={s.ViewProjectText}>View Project</span>
+                  <img
+                    className={s.ViewProjectImage}
+                    src={viewProjectArrow}
+                    alt="img"
+                  />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className={s.ImageCardMain}>
-          <div className={s.ImageDivCard}>
-            <img className={s.ImageDiv} src={myLibPortfolio} alt="image" />
-          </div>
-          <div className={s.ImageDescriptionMainDiv}>
-            <div className={s.ImageDescriptionNameAndData}>
-              <span className={s.NamePhoto}>My Library</span>
-              <span className={s.DatePhoto}>October 2024</span>
-            </div>
-            <div className={s.ViewProjectMainDiv}>
-              <a className={s.ViewProject}>
-                <span className={s.ViewProjectText}>View Project</span>
-                <img
-                  className={s.ViewProjectImage}
-                  src={viewProjectArrow}
-                  alt="img"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

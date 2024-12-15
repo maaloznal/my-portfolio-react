@@ -277,6 +277,11 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 27px */
+  cursor: pointer;
+}
+
+.socMediaBtn:hover {
+  background: rgb(39, 39, 49);
 }
 
 @media (max-width: 1024px) {

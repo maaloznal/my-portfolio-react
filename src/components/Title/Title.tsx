@@ -12,7 +12,7 @@ const Title = () => {
       <img className={titleStyle.imagetitle} src={imageTitle} alt="image" />
       <div className={titleStyle.letsWork}>
         <div className={titleStyle.textAndBtn}>
-          <h2 className={titleStyle.textLetswork}>LET'S</h2>
+          <h2 className={titleStyle.textLetswork}>Let’s</h2>
           <a className={titleStyle.btnLetswork} href="#">
             <img className={titleStyle.workUrl}src={workUrl} alt="icon" />
           </a>

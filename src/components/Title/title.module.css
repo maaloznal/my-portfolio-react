@@ -23,13 +23,13 @@
 .nameDiv,
 .textLetswork,
 .textwork {
+  color: var(--Absolute-White, #fff);
   font-family: Manrope;
-  font-size: 80px;
+  font-size: 58px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  color: #e4e4e6;
   margin: 0;
 }
 

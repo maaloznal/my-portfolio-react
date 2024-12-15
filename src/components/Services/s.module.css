@@ -8,8 +8,6 @@
   max-width: 1596px;
 }
 
-/* .servicesMyphoto {
-} */
 
 .servicesTitle {
   padding-top: 80px;
@@ -33,9 +31,6 @@
   text-transform: uppercase;
 }
 
-/* .servicesBtnMainDiv {
-} */
-
 .servicesA {
   background: #000;
   color: white;
@@ -48,8 +43,6 @@
   background: var(--Dark-12, #1c1c21);
 }
 
-/* .servicesDivA {
+.servicesA:hover{
+  background: rgb(39, 39, 49);
 }
-
-.servicesDivASpan {
-} */
