@@ -6,7 +6,7 @@ const Services = () => {
     <div className={s.servicesSection}>
       <div className={s.servicesMyphoto}>
         <span className={s.servicesTitle}>Services</span>
-        <h2 className={s.servicesText}>My Photography Services</h2>
+        <h2 className={s.servicesText}>My Development Services</h2>
       </div>
       <div className={s.servicesBtnMainDiv}>
         <a className={s.servicesA} href="#">
