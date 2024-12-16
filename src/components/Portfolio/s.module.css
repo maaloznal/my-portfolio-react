@@ -179,5 +179,4 @@
 .ViewProjectImage:hover{
   transform: rotate(45deg);
   transition: transform 0.3s ease;
-
 }

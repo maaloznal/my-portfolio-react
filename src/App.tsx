@@ -1,25 +1,26 @@
-import './App.css'
-import About from './components/About/About'
-import Data from './components/Data/data'
-import Header from './components/Header/header'
-import RenderImage from './components/RenderImg/RenderImg'
-import Title from './components/Title/Title'
-import Development from './components/Development/Development'
-import Portfolio from './components/Portfolio/Portfolio'
+import "./App.css";
+import About from "./components/About/About";
+import Data from "./components/Data/data";
+import Header from "./components/Header/header";
+import RenderImage from "./components/RenderImg/RenderImg";
+import Title from "./components/Title/Title";
+import Development from "./components/Development/Development";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Faqs from "./components/Faqs/Faqs";
 
 function App() {
-
   return (
     <>
-      <Header/>
+      <Header />
       <Title />
       <Data />
       <RenderImage />
       <About />
       <Development />
       <Portfolio />
+      <Faqs />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

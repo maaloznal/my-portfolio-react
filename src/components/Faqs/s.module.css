@@ -1,0 +1,117 @@
+.FaqsSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 1597px;
+  align-items: flex-start;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.FaqsTitleContiner {
+  display: flex;
+  padding-bottom: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.FaqsTitleText {
+  color: var(--Grey-50, #797c86);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.FaqsTitleMainText {
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.QuestionsMainDiv {
+  display: flex;
+  padding: 30px 50px;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.FaqCont {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  outline: 1px solid #201c1c;
+}
+
+.QuestionArray {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Question {
+  margin: 0;
+  color: var(--Grey-70, #afb0b6);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.Answer {
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  color: var(--Grey-50, #797c86);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+}
+
+.Answer.open {
+  visibility: visible;
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+}
+
+.ArrowIconDiv {
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+  padding: 14px;
+  border-radius: 100px;
+  border: 1px solid var(--Dark-12, #1c1c21);
+}
+
+.ArrowIconDiv:hover {
+  border: 1px solid rgb(255, 255, 255);
+  transition: all 200ms 0ms linear;
+}
+
+.ArrowIconDiv.open {
+  transform: rotate(180deg);
+}

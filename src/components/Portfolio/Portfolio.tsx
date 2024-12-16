@@ -7,7 +7,14 @@ import fakestore from "../../../public/fakestore.png";
 import myLibPortfolio from "../../../public/myLibPortfolio.png";
 import viewProjectArrow from "../../../public/viewProjectArrow.svg";
 
-const projects = [
+interface Project {
+  name: string;
+  date: string;
+  image: string;
+  link: string;
+}
+
+const projects: Project[] = [
   {
     name: "TealuxE",
     date: "October 2024",

@@ -5,7 +5,11 @@ import developmentIcon from "../../../public/developmentIcon.svg";
 import workUrl from "../../../public/letsworkicon.svg";
 import developmentImage from "../../../public/developmentImage.jpeg";
 
-const serviceHighlightsData: { text: string }[] = [
+interface ServiceHighlights {
+  text: string;
+}
+
+const serviceHighlightsData: ServiceHighlights[] = [
   {
     text: "Development of websites, software, and other projects.",
   },
