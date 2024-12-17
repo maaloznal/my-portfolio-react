@@ -1,11 +1,12 @@
 import s from "./s.module.css";
-import PortfolioArrowRight from "../../../public/PortfolioArrowRight.svg";
-import PortfolioArrowLeft from "../../../public/PortfolioArrowLeft.svg";
-import viewServicesBtn from "../../../public/ViewAllServices.png";
+// import PortfolioArrowRight from "../../../public/PortfolioArrowRight.svg";
+// import PortfolioArrowLeft from "../../../public/PortfolioArrowLeft.svg";
+// import viewServicesBtn from "../../../public/ViewAllServices.png";
 import Layout from "../../../public/Layout.png";
 import fakestore from "../../../public/fakestore.png";
 import myLibPortfolio from "../../../public/myLibPortfolio.png";
 import viewProjectArrow from "../../../public/viewProjectArrow.svg";
+import ArrowBtn from "../ArrowBtn/ArrowBtn";
 
 interface Project {
   name: string;
@@ -43,27 +44,7 @@ const Portfolio = () => {
           <span className={s.PhotoWorkSpan}>Portfolio</span>
           <h2 className={s.PhotoWorkText}>Explore My Development Work</h2>
         </div>
-        <div className={s.PhotoWorkButtons}>
-          <div className={s.PhotoWorkBtnArrows}>
-            <div className={s.PortfolioArrowBtn}>
-              <img
-                className={s.PortfolioArray}
-                src={PortfolioArrowRight}
-                alt="icon"
-              />
-            </div>
-            <div className={s.PortfolioArrowBtn}>
-              <img
-                className={s.PortfolioArray}
-                src={PortfolioArrowLeft}
-                alt="icon"
-              />
-            </div>
-          </div>
-          <div className={s.PhotoWorkBtnViewServices}>
-            <img src={viewServicesBtn} alt="img" />
-          </div>
-        </div>
+        <ArrowBtn />
       </div>
 
       <div className={s.PortfolioImageWorkMainDiv}>

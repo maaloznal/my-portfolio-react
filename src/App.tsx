@@ -7,6 +7,7 @@ import Title from "./components/Title/Title";
 import Development from "./components/Development/Development";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Faqs from "./components/Faqs/Faqs";
+import Reviews from "./components/Reviews/Reviews";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Development />
       <Portfolio />
       <Faqs />
+      <Reviews />
     </>
   );
 }

@@ -1,0 +1,74 @@
+.ReviewsSection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1597px;
+  align-items: flex-start;
+  gap: 80px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.ReviewsTitleMainDivCont {
+  display: flex;
+  gap: 80px;
+  align-items: flex-end;
+  width: 100%;
+  border-bottom: 1px solid var(--Dark-12, #1c1c21);
+  padding-bottom: 50px;
+}
+
+.ReviewsTitleMainDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ReviewsTitleTextDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.Testimonials {
+  color: var(--Grey-50, #797c86);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.ReviewsTitleText {
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.TotalReviews {
+  color: var(--Grey-40, #62646c);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.CountReviews {
+  color: var(--Grey-80, #cacace);
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 42px */
+}
+
+.ReviewsClientMainCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
