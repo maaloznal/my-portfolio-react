@@ -30,7 +30,7 @@ const Reviews = () => {
             <span className={s.Testimonials}>Testimonials</span>
             <h2 className={s.ReviewsTitleText}>What My Clients Say</h2>
             <span className={s.TotalReviews}>Total Reviews</span>
-            <span className={s.CountReviews}>10</span>
+            <span className={s.CountReviews}>{reviews.length}</span>
           </div>
         </div>
         <ArrowBtn
