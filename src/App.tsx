@@ -8,6 +8,7 @@ import Development from "./components/Development/Development";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Faqs from "./components/Faqs/Faqs";
 import Reviews from "./components/Reviews/Reviews";
+import MyName from "./components/MyName/MyName";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <Portfolio />
       <Faqs />
       <Reviews />
+      <MyName />
+      <Data />
     </>
   );
 }

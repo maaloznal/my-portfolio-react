@@ -1,0 +1,22 @@
+.MyNameSection {
+  max-width: 1596px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.MyNameContiner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.MyNameText {
+  box-sizing: border-box;
+  display: block;
+  font-family: Manrope;
+  font-size: 300px;
+  font-weight: 600;
+  line-height: 420px;
+  color: rgb(121, 124, 134);
+  margin: 0;
+}
