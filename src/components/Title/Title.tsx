@@ -1,5 +1,5 @@
 import imageTitle from "../../../public/Vector_1.svg";
-import MainBtn from "../MainBtn/MainBtn";
+import LetsWork from "../LetsWork/LetsWork";
 import titleStyle from "./title.module.css";
 
 const Title = () => {
@@ -10,15 +10,7 @@ const Title = () => {
         <h1 className={titleStyle.nameDiv}>BAGAVDIN MAGOMEDOV</h1>
       </div>
       <img className={titleStyle.imagetitle} src={imageTitle} alt="image" />
-      <div className={titleStyle.letsWork}>
-        <div className={titleStyle.textAndBtn}>
-          <h2 className={titleStyle.textLetswork}>Let’s</h2>
-          <MainBtn/>
-        </div>
-        <div className="text">
-          <h2 className={titleStyle.textwork}>WORK TOGETHER</h2>
-        </div>
-      </div>
+      <LetsWork/>
     </div>
   );
 };

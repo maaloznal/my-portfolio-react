@@ -1,0 +1,23 @@
+.textLetswork,
+.textwork {
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.textLetswork,
+.textwork {
+  font-size: 58px;
+}
+
+
+.textAndBtn {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}

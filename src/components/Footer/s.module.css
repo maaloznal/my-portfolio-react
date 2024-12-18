@@ -1,0 +1,16 @@
+.FooterMainDiv {
+  max-width: 1596px;
+  margin: 0 auto;
+}
+/* .FooterDiv {
+} */
+
+.LetsWorkSpan {
+  color: var(--Grey-50, #797c86);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
