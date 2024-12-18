@@ -3,28 +3,51 @@ import PortfolioArrowRight from "../../../public/PortfolioArrowRight.svg";
 import PortfolioArrowLeft from "../../../public/PortfolioArrowLeft.svg";
 import viewServicesBtn from "../../../public/ViewAllServices.png";
 
-const ArrowBtn = () => {
+interface ArrowBtnProps {
+  onLeftClick: () => void;
+  onRightClick: () => void;
+  isLeftDisabled?: boolean;
+  isRightDisabled?: boolean;
+}
+
+const ArrowBtn: React.FC<ArrowBtnProps> = ({
+  onLeftClick,
+  onRightClick,
+  isLeftDisabled = false,
+  isRightDisabled = false,
+}) => {
   return (
     <div className={s.PhotoWorkButtons}>
       <div className={s.PhotoWorkBtnArrows}>
-        <div className={s.PortfolioArrowBtn}>
+        <button
+          className={s.PortfolioArrowBtn}
+          onClick={onLeftClick}
+          disabled={isLeftDisabled}
+        >
           <img
             className={s.PortfolioArray}
             src={PortfolioArrowRight}
-            alt="icon"
+            alt="Right Arrow"
           />
-        </div>
-        <div className={s.PortfolioArrowBtn}>
+        </button>
+        <button
+          className={s.PortfolioArrowBtn}
+          onClick={onRightClick}
+          disabled={isRightDisabled}
+        >
           <img
             className={s.PortfolioArray}
             src={PortfolioArrowLeft}
-            alt="icon"
+            alt="Left Arrow"
           />
-        </div>
+        </button>
       </div>
-      <a className={s.PhotoWorkBtnViewServicesA} href="https://github.com/maaloznal">
+      <a
+        className={s.PhotoWorkBtnViewServicesA}
+        href="https://github.com/maaloznal"
+      >
         <div className={s.PhotoWorkBtnViewServices}>
-          <img src={viewServicesBtn} alt="img" />
+          <img src={viewServicesBtn} alt="View Services" />
         </div>
       </a>
     </div>

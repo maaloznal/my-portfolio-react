@@ -1,14 +1,19 @@
 import s from "./s.module.css";
 import Star from "../../../public/Star.svg";
 import SocMedia from "../SocMedia/SocMedia";
+import { DataReviwes } from "../DataReviwesClient/DataReviwesClient";
 
-const CardReviwes = () => {
+interface CardReviwesProps {
+  review: DataReviwes;
+}
+
+const CardReviwes: React.FC<CardReviwesProps> = ({ review }) => {
   return (
     <div className={s.ReviewClientCard}>
       <div className={s.DataClient}>
         <div className={s.NameLocationClientCont}>
-          <span className={s.NameClientSpan}>Emily Johnson</span>
-          <span className={s.LocatoionClient}>USA, California</span>
+          <span className={s.NameClientSpan}>{review.name}</span>
+          <span className={s.LocatoionClient}>{review.location}</span>
         </div>
         <SocMedia />
       </div>

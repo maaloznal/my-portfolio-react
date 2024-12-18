@@ -1,8 +1,27 @@
+import { useState } from "react";
 import ArrowBtn from "../ArrowBtn/ArrowBtn";
 import CardReviwes from "../CardReviwes/CardReviwes";
 import s from "./s.module.css";
+import { reviews } from "../DataReviwesClient/DataReviwesClient";
 
 const Reviews = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const reviewsPerPage = 3;
+  const handleScrollLeft = () => {
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - reviewsPerPage, 0));
+  };
+
+  const handleScrollRight = () => {
+    setCurrentIndex((prevIndex) =>
+      Math.min(prevIndex + reviewsPerPage, reviews.length - reviewsPerPage)
+    );
+  };
+
+  const displayedReviews = reviews.slice(
+    currentIndex,
+    currentIndex + reviewsPerPage
+  );
+
   return (
     <div className={s.ReviewsSection}>
       <div className={s.ReviewsTitleMainDivCont}>
@@ -14,12 +33,17 @@ const Reviews = () => {
             <span className={s.CountReviews}>323</span>
           </div>
         </div>
-        <ArrowBtn />
+        <ArrowBtn
+          onLeftClick={handleScrollLeft}
+          onRightClick={handleScrollRight}
+          isLeftDisabled={currentIndex === 0}
+          isRightDisabled={currentIndex + reviewsPerPage >= reviews.length}
+        />
       </div>
       <div className={s.ReviewsClientMainCont}>
-        <CardReviwes />
-        <CardReviwes />
-        <CardReviwes />
+        {displayedReviews.map((review) => (
+          <CardReviwes key={review.id} review={review} />
+        ))}
       </div>
     </div>
   );
