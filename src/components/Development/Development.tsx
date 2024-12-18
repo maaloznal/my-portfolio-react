@@ -3,25 +3,9 @@ import s from "./s.module.css";
 import developmentIcon from "../../../public/developmentIcon.svg";
 import developmentImage from "../../../public/developmentImage.jpeg";
 import MainBtn from "../MainBtn/MainBtn";
+import { serviceHighlightsData } from "../ServiceHighlightsData/ServiceHighlightsData";
 
-interface ServiceHighlights {
-  text: string;
-}
 
-const serviceHighlightsData: ServiceHighlights[] = [
-  {
-    text: "Development of websites, software, and other projects.",
-  },
-  {
-    text: "I know how to bring your ideas to life.",
-  },
-  {
-    text: "A flexible approach to development, including the creation of custom solutions.",
-  },
-  {
-    text: "Fast and high-quality results for your project.",
-  },
-];
 
 const Development = () => {
   return (
