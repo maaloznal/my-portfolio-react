@@ -1,8 +1,6 @@
 import Services from "../Services/Services";
 import s from "./s.module.css";
-import titleStyle from "../Title/title.module.css";
 import developmentIcon from "../../../public/developmentIcon.svg";
-import workUrl from "../../../public/letsworkicon.svg";
 import developmentImage from "../../../public/developmentImage.jpeg";
 import MainBtn from "../MainBtn/MainBtn";
 
