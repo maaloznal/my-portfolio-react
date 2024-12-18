@@ -60,21 +60,3 @@
   align-items: center;
   column-gap: 10px;
 }
-
-.btnLetswork {
-  border-radius: 100px;
-  box-shadow: 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28) inset;
-  background: #4a2ced;
-  padding: 18px 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.workUrl {
-  transition: transform 0.3s ease;
-}
-
-.btnLetswork:hover .workUrl {
-  transform: rotate(45deg);
-}

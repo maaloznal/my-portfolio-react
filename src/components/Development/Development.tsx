@@ -4,6 +4,7 @@ import titleStyle from "../Title/title.module.css";
 import developmentIcon from "../../../public/developmentIcon.svg";
 import workUrl from "../../../public/letsworkicon.svg";
 import developmentImage from "../../../public/developmentImage.jpeg";
+import MainBtn from "../MainBtn/MainBtn";
 
 interface ServiceHighlights {
   text: string;
@@ -32,9 +33,7 @@ const Development = () => {
         <div className={s.developmentDescription}>
           <div className={s.developmentDescriptionTitle}>
             <h3 className={s.developmentDescriptionTitleText}>Development</h3>
-            <a className={titleStyle.btnLetswork} href="#">
-              <img className={titleStyle.workUrl} src={workUrl} alt="icon" />
-            </a>
+            <MainBtn/>
           </div>
           <div className={s.developmentDescriptionText}>
             <p className={s.developmentDescriptionTextParagraph}>
