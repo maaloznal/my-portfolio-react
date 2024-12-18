@@ -21,7 +21,7 @@ export const reviews: DataReviwes[] = [
     name: 'Michael Smith',
     location: 'Canada, Toronto',
     socialMedia: ['instagram', 'twitter', 'linkedin'],
-    rating: 5,
+    rating: 4,
     text: 'Working with Bagavdin was a pleasure. He pays attention to detail and pursuit of excellence.'
   },
   {
@@ -29,7 +29,7 @@ export const reviews: DataReviwes[] = [
     name: 'Sophia Lee',
     location: 'UK, London',
     socialMedia: ['facebook', 'instagram', 'linkedin'],
-    rating: 5,
+    rating: 3,
     text: 'Bagavdin’s work is exceptional. He makes complex tasks look easy.'
   },
   {
@@ -37,7 +37,7 @@ export const reviews: DataReviwes[] = [
     name: 'James Brown',
     location: 'Australia, Sydney',
     socialMedia: ['twitter', 'instagram', 'facebook'],
-    rating: 5,
+    rating: 2,
     text: 'Bagavdin is a true professional with a great eye for design and functionality.'
   },
   {
@@ -45,7 +45,7 @@ export const reviews: DataReviwes[] = [
     name: 'Emma Wilson',
     location: 'Germany, Berlin',
     socialMedia: ['linkedin', 'facebook', 'twitter'],
-    rating: 5,
+    rating: 1,
     text: 'I highly recommend Bagavdin for any web development project.'
   },
   {
@@ -53,7 +53,7 @@ export const reviews: DataReviwes[] = [
     name: 'Liam Taylor',
     location: 'France, Paris',
     socialMedia: ['instagram', 'twitter', 'linkedin'],
-    rating: 5,
+    rating: 2,
     text: 'Bagavdin’s attention to detail is unmatched. He delivers quality work.'
   },
   {
@@ -61,7 +61,7 @@ export const reviews: DataReviwes[] = [
     name: 'Olivia Martinez',
     location: 'Spain, Madrid',
     socialMedia: ['facebook', 'instagram', 'twitter'],
-    rating: 5,
+    rating: 3,
     text: 'Bagavdin is a creative and reliable developer. I’m impressed with his work.'
   },
   {
@@ -69,7 +69,7 @@ export const reviews: DataReviwes[] = [
     name: 'Noah Anderson',
     location: 'Italy, Rome',
     socialMedia: ['linkedin', 'twitter', 'facebook'],
-    rating: 5,
+    rating: 1,
     text: 'Bagavdin’s solutions are innovative and user-friendly.'
   },
   {
@@ -77,7 +77,7 @@ export const reviews: DataReviwes[] = [
     name: 'Ava Thomas',
     location: 'Japan, Tokyo',
     socialMedia: ['instagram', 'facebook', 'linkedin'],
-    rating: 5,
+    rating: 4,
     text: 'Bagavdin is a great developer with a deep understanding of web technologies.'
   },
   {

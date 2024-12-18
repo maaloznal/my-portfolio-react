@@ -1,10 +1,11 @@
-import s from "./s.module.css";
-import Star from "../../../public/Star.svg";
-import SocMedia from "../SocMedia/SocMedia";
-import { DataReviwes } from "../DataReviwesClient/DataReviwesClient";
+import React from 'react';
+import s from './s.module.css';
+import SocMedia from '../SocMedia/SocMedia';
+import Rating from '../RatingClient/Rating'; 
+import { DataReviwes } from '../DataReviwesClient/DataReviwesClient';
 
 interface CardReviwesProps {
-  review: DataReviwes;
+  review: DataReviwes; 
 }
 
 const CardReviwes: React.FC<CardReviwesProps> = ({ review }) => {
@@ -18,16 +19,9 @@ const CardReviwes: React.FC<CardReviwesProps> = ({ review }) => {
         <SocMedia />
       </div>
       <div className={s.GradeClient}>
-        <img src={Star} alt="gradeIcon" />
-        <img src={Star} alt="gradeIcon" />
-        <img src={Star} alt="gradeIcon" />
-        <img src={Star} alt="gradeIcon" />
-        <img src={Star} alt="gradeIcon" />
+        <Rating rating={review.rating} /> 
       </div>
-      <p className={s.ReviewClientText}>
-        Bagavdin is a talented developer who doesn't just write code; he creates
-        products that inspire and simplify life.
-      </p>
+      <p className={s.ReviewClientText}>{review.text}</p>
     </div>
   );
 };
