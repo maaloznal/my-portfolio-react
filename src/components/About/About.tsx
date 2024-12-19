@@ -3,9 +3,6 @@ import imgArrow from "../../../public/knowmore.png";
 import imageProfil from "../../../public/photoProfil.png";
 import introductIcon from "../../../public/introductIcon.svg";
 import SocMedia from "../SocMedia/SocMedia";
-// import fb from "../../../public/facebook.svg";
-// import ln from "../../../public/linkdelin.svg";
-// import tt from "../../../public/twitter.svg";
 
 const About = () => {
   return (
@@ -21,8 +18,8 @@ const About = () => {
           </a>
         </div>
       </div>
-
-      <div className={s.aboutMain}>
+      
+      <div id="About" className={s.aboutMain}>
         <div className={s.imageContainerProfil}>
           <img
             className={s.imageProfile}

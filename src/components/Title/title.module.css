@@ -1,16 +1,29 @@
+.SectionTit {
+  position: relative;
+  margin: 0 auto;
+}
+
 .title {
   display: flex;
-  padding: 80px 162px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   justify-content: space-between;
-  position: relative;
-  background: rgb(7, 7, 8);
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
 }
 
 .imagetitle {
-  top: 0;
   position: absolute;
-  right: 41%;
-  z-index: 100;
+  top: 0;
+  right: calc(47% - 81px); 
+  max-width: 100%;
+  height: auto;
+  z-index: 1; 
+  translate: none;
+  rotate: none;
+  scale: none;
+  opacity: 1;
 }
 
 .nameDivContainer {
@@ -18,6 +31,8 @@
   margin: 0;
   flex-direction: column;
   width: 33%;
+  position: relative; 
+  z-index: 20; 
 }
 
 .nameDiv,
@@ -59,4 +74,73 @@
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+
+.LetsWork{
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+
+@media (max-width: 1200px) {
+  .title {
+    padding: 40px 80px;
+  }
+
+  .imagetitle {
+    right: calc(41% - 40px);
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  .imagetitle {
+    position: relative; 
+    margin-top: 20px;
+    right: 0;
+  }
+
+  .nameDivContainer {
+    width: 100%;
+  }
+
+  .nameDiv,
+  .textLetswork,
+  .textwork {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    padding: 20px;
+  }
+
+  .nameDiv,
+  .textLetswork,
+  .textwork {
+    font-size: 28px;
+  }
+
+  .nameDivSpan {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nameDiv,
+  .textLetswork,
+  .textwork {
+    font-size: 24px;
+  }
+
+  .nameDivSpan {
+    font-size: 16px;
+  }
 }

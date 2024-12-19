@@ -1,13 +1,13 @@
 .FooterSection {
   display: flex;
+  justify-content: center;
 }
-
 
 .FooterDiv {
   display: flex;
   width: 100%;
-  border-top: 1px solid var(--Dark-12, #1C1C21);
-  border-bottom: 1px solid var(--Dark-12, #1C1C21);
+  border-top: 1px solid var(--Dark-12, #1c1c21);
+  border-bottom: 1px solid var(--Dark-12, #1c1c21);
 }
 
 .LetsWork {

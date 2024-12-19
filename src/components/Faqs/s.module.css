@@ -1,7 +1,6 @@
 .FaqsSection {
   display: flex;
   flex-direction: column;
-  max-width: 1597px;
   align-items: flex-start;
   margin: 0 auto;
   box-sizing: border-box;

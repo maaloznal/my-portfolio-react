@@ -1,7 +1,6 @@
 .ReviewsSection {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1597px;
   align-items: flex-start;
   gap: 80px;
   margin: 0 auto;

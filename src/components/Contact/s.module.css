@@ -1,0 +1,33 @@
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesBtnMainDiv {
+  padding-top: 20px;
+}
+
+.servicesText {
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+
+.servicesA {
+  background: #000;
+  color: white;
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #2f2f37;
+  background: var(--Dark-12, #1c1c21);
+}
+
+.servicesA:hover {
+  background: rgb(39, 39, 49);
+}

@@ -2,7 +2,7 @@ import "./App.css";
 import About from "./components/About/About";
 import Data from "./components/Data/data";
 import Header from "./components/Header/header";
-import RenderImage from "./components/RenderImg/RenderImg";
+// import RenderImage from "./components/RenderImg/RenderImg";
 import Title from "./components/Title/Title";
 import Development from "./components/Development/Development";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -18,7 +18,7 @@ function App() {
       <Header />
       <Title />
       <Data />
-      <RenderImage />
+      {/* <RenderImage /> */}
       <About />
       <Development />
       <Portfolio />

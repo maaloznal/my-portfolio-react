@@ -3,7 +3,7 @@ import workUrl from "../../../public/letsworkicon.svg";
 
 const MainBtn = () => {
   return (
-    <a className={s.btnLetswork} href="#">
+    <a className={s.btnLetswork} href="#About">
       <img className={s.workUrl} src={workUrl} alt="icon" />
     </a>
   );
