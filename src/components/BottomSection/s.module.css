@@ -1,0 +1,38 @@
+.BottomSection {
+  display: flex;
+  padding: 40px 162px;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 82%;
+  margin: 0 auto;
+  max-width: 1596px;
+}
+
+.BottomSectionContiner {
+  width: 100%;
+  margin: 0px auto;
+  display: block;
+  padding: 0px 20px;
+  max-width: 1596px;
+}
+
+.BottomSectionMainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BottomSpan {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.SpanBottom {
+  color: var(--Grey-50, #797c86);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}

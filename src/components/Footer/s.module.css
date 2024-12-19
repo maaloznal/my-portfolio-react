@@ -1,9 +1,23 @@
-.FooterMainDiv {
-  max-width: 1596px;
-  margin: 0 auto;
+.FooterSection {
+  display: flex;
 }
-/* .FooterDiv {
-} */
+
+
+.FooterDiv {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid var(--Dark-12, #1C1C21);
+  border-bottom: 1px solid var(--Dark-12, #1C1C21);
+}
+
+.LetsWork {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px;
+  border-left: 1px solid var(--Dark-12, #1c1c21);
+}
 
 .LetsWorkSpan {
   color: var(--Grey-50, #797c86);
@@ -13,4 +27,43 @@
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.Links {
+  flex: 1 1 0%;
+  width: 100%;
+  display: flex;
+  column-gap: 100px;
+  justify-content: center;
+  padding: 80px;
+  border-right: 1px solid var(--Dark-12, #1c1c21);
+  border-left: 1px solid var(--Dark-12, #1c1c21);
+}
+
+.LinksElemDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.LinkSpan {
+  color: var(--Grey-50, #797c86);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.LinksElemDiv a {
+  color: var(--Grey-95, #f2f2f3);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--Dark-20, #2f2f37);
 }

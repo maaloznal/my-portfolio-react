@@ -9,6 +9,8 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Faqs from "./components/Faqs/Faqs";
 import Reviews from "./components/Reviews/Reviews";
 import MyName from "./components/MyName/MyName";
+import Footer from "./components/Footer/Footer";
+import BottomSection from "./components/BottomSection/Bottom Section";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
       <Reviews />
       <MyName />
       <Data />
+      <Footer />
+      <BottomSection />
     </>
   );
 }
