@@ -1,14 +1,14 @@
 .dataDiv {
   display: flex;
-  overflow: hidden;
   position: relative;
   width: 100%;
-  border-top: 1px solid #1c1c21;
-  border-bottom: 1px solid #1c1c21;
+
   color: #d6d0fb;
 }
 
 .dataUl {
+  display: flex;
+  will-change: transform;
   display: flex;
   padding: 20px;
   align-items: flex-start;

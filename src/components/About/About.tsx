@@ -12,13 +12,13 @@ const About = () => {
           <span className={s.aboutSpan}>ABOUT</span>
           <h2 className={s.aboutH2}>I AM BAGAVDIN</h2>
         </div>
-        <div className={s.knowMore}>
-          <a href="#">
+        <a className={s.servicesA} href="#About">
+          <div className={s.servicesDivA}>
             <img src={imgArrow} alt="arrowIcon" />
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
-      
+
       <div id="About" className={s.aboutMain}>
         <div className={s.imageContainerProfil}>
           <img
