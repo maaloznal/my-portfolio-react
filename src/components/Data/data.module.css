@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   width: 100%;
-
   color: #d6d0fb;
 }
 
@@ -11,12 +10,14 @@
   will-change: transform;
   display: flex;
   padding: 20px;
+  margin: 0;
   align-items: flex-start;
   gap: 20px;
   list-style: none;
   animation: scroll 30s linear infinite;
   white-space: nowrap;
   flex-shrink: 0;
+  background: #0e0e10;
 }
 
 .dataLi {
