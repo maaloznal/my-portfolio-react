@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   color: #d6d0fb;
+  overflow: hidden;
 }
 
 .dataUl {

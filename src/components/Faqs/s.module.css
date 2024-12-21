@@ -114,3 +114,10 @@
 .ArrowIconDiv.open {
   transform: rotate(180deg);
 }
+
+@media (max-width: 660px) {
+  .QuestionsMainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}

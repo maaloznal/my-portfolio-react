@@ -19,3 +19,27 @@
   color: rgb(121, 124, 134);
   margin: 0;
 }
+
+@media (max-width: 1427px) {
+  .MyNameText {
+    font-size: 200px;
+  }
+}
+
+@media (max-width: 951px) {
+  .MyNameText {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .MyNameText {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 470px) {
+  .MyNameText {
+    font-size: 50px;
+  }
+}

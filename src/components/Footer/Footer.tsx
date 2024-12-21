@@ -6,7 +6,13 @@ import FooterIconRight from "../../../public/FooterIconRight.svg";
 const Footer = () => {
   return (
     <div className={s.FooterSection}>
-      <img src={FooterIconRight} alt="Footer Icon Right" />
+      <div className={s.FooterImgDiv}>
+        <img
+          className={s.FooterImg}
+          src={FooterIconRight}
+          alt="Footer Icon Right"
+        />
+      </div>
       <div className={s.FooterMainDiv}>
         <div className={s.FooterDiv}>
           <div className={s.LetsWork}>
@@ -48,7 +54,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <img src={FooterIconLeft} alt="Footer Icon Left" />
+      <div className={s.FooterImgDiv}>
+        <img
+          className={s.FooterImg}
+          src={FooterIconLeft}
+          alt="Footer Icon Left"
+        />
+      </div>
     </div>
   );
 };

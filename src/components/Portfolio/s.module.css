@@ -9,6 +9,7 @@
 
 .PhotoWorkMainDiv {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid rgb(28, 28, 33);
   padding-bottom: 50px;
@@ -41,14 +42,13 @@
   text-transform: uppercase;
 }
 
-
 .PortfolioImageWorkMainDiv {
-  margin: 0 auto;
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
 }
-
 
 .ImageCardMain {
   display: flex;
@@ -125,7 +125,16 @@
   gap: 10px;
 }
 
-.ViewProjectImage:hover{
+.ViewProjectImage:hover {
   transform: rotate(45deg);
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 950px) {
+  .PortfolioImageWorkMainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }

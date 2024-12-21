@@ -13,3 +13,9 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+@media (max-width: 950px) {
+  .logo {
+    font-size: 20px;
+  }
+}

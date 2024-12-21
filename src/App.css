@@ -9,7 +9,12 @@ body {
   margin: 0 auto;
   padding: 0;
   background: #000;
-  overflow: visible;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 a {
@@ -19,4 +24,12 @@ a {
   text-decoration: none;
   color: white;
   box-sizing: border-box;
+}
+
+@media (max-width: 950px) {
+  body {
+    overflow-x: hidden;
+    display: block;
+    scroll-behavior: smooth;
+  }
 }

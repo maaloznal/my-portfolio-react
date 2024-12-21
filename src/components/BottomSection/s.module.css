@@ -31,3 +31,12 @@
   font-weight: 400;
   line-height: 150%; /* 27px */
 }
+
+@media (max-width: 546px) {
+  .BottomSectionMainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -31,3 +31,10 @@
 .servicesA:hover {
   background: rgb(39, 39, 49);
 }
+
+
+@media (max-width: 950px) {
+  .servicesSection{
+    display: none;
+  }
+}

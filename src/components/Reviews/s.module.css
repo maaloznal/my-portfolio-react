@@ -10,8 +10,9 @@
 
 .ReviewsTitleMainDivCont {
   display: flex;
-  gap: 80px;
+  flex-wrap: wrap;
   align-items: flex-end;
+  gap: 80px;
   width: 100%;
   border-bottom: 1px solid var(--Dark-12, #1c1c21);
   padding-bottom: 50px;
@@ -68,6 +69,16 @@
 
 .ReviewsClientMainCont {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+}
+
+@media (max-width: 1054px) {
+  .ReviewsClientMainCont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
 }

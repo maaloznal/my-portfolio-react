@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.FooterMainDiv {
+  display: flex;
+}
+
 .FooterDiv {
   display: flex;
   width: 100%;
@@ -66,4 +70,37 @@
   line-height: normal;
   text-transform: uppercase;
   border-bottom: 1px solid var(--Dark-20, #2f2f37);
+}
+
+.FooterImgDiv {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1427px) {
+  .FooterImgDiv {
+    display: none;
+  }
+}
+
+@media (max-width: 1235px) {
+  .FooterDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 770px) {
+  .Links{
+    flex-direction: column;
+  }
+
+  .LinksElemDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
