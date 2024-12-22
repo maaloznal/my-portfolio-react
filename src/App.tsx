@@ -10,11 +10,17 @@ import Faqs from "./components/Faqs/Faqs";
 import Reviews from "./components/Reviews/Reviews";
 import MyName from "./components/MyName/MyName";
 import Footer from "./components/Footer/Footer";
-import BottomSection from "./components/BottomSection/Bottom Section";
+import BottomSection from "./components/BottomSection/BottomSection";
+import { ThemeProvider } from "./context/ThemeProvider";
+import ThemeRender from "./components/ThemeRender/ThemeRender";
+
 
 function App() {
+
+
   return (
     <>
+      <ThemeRender />
       <Header />
       <Title />
       <Data />
@@ -32,4 +38,10 @@ function App() {
   );
 }
 
-export default App;
+export default function AppWrapper() {
+  return (
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  );
+}

@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  color: #d6d0fb;
+  color: var(--text-color);
   overflow: hidden;
 }
 
@@ -18,7 +18,7 @@
   animation: scroll 30s linear infinite;
   white-space: nowrap;
   flex-shrink: 0;
-  background: #0e0e10;
+  background-color: var(--background-color);
 }
 
 .dataLi {

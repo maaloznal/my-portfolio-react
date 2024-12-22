@@ -1,11 +1,11 @@
-.letsWork{
+.letsWork {
   display: flex;
   flex-direction: column;
 }
 
 .textLetswork,
 .textwork {
-  color: var(--Absolute-White, #fff);
+  color: var(--text-color);
   font-family: Manrope;
   font-size: 58px;
   font-style: normal;
@@ -19,7 +19,6 @@
 .textwork {
   font-size: 58px;
 }
-
 
 .textAndBtn {
   display: flex;

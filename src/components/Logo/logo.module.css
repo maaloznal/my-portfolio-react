@@ -1,11 +1,10 @@
 .logo {
+  color: var(--text-color);
+  background-color: var(--background-color);
   display: flex;
-  background-color: black;
-  color: white;
   padding-bottom: 30px;
   flex-direction: column;
   justify-content: center;
-  color: var(--Grey-90, #e4e4e6);
   font-family: Manrope;
   font-size: 40px;
   font-style: normal;

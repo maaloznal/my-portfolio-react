@@ -3,7 +3,6 @@
   margin: 0 auto;
 }
 
-
 .title {
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +39,7 @@
 .nameDiv,
 .textLetswork,
 .textwork {
-  color: var(--Absolute-White, #fff);
+  color: var(--text-color);
   font-family: Manrope;
   font-size: 58px;
   font-style: normal;

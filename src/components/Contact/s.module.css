@@ -8,7 +8,8 @@
 }
 
 .servicesText {
-  color: var(--Absolute-White, #fff);
+  color: var(--text-color);
+  background-color: var(--background-color);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -17,24 +18,22 @@
 }
 
 .servicesA {
-  background: #000;
-  color: white;
+  color: var(--text-color);
+  background-color: var(--background-color);
   display: flex;
   padding: 16px 24px;
   align-items: center;
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #2f2f37;
-  background: var(--Dark-12, #1c1c21);
 }
 
 .servicesA:hover {
-  background: rgb(39, 39, 49);
+  background-color: #9e9e9e;
 }
 
-
 @media (max-width: 950px) {
-  .servicesSection{
+  .servicesSection {
     display: none;
   }
 }

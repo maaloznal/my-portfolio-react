@@ -7,7 +7,7 @@
 }
 
 .aboutName {
-  color: white;
+  color: var(--text-color);
 }
 
 .aboutSpan {
@@ -21,7 +21,7 @@
 }
 
 .aboutH2 {
-  color: #fff;
+  color: var(--text-color);
   font-family: Manrope;
   font-size: 58px;
   font-style: normal;

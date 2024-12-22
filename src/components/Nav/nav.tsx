@@ -6,9 +6,9 @@ const Nav: React.FC = () => {
     return (
       <nav className={navStyle.nav}>
         <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Services</a>
+        <a href="#About">About Me</a>
+        <a href="#portfolioSection">Portfolio</a>
+        <a href="#services">Services</a>
       </nav>
     );
   } else {

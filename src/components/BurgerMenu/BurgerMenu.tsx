@@ -13,17 +13,17 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, onClose }) => {
         <a href="#" onClick={onClose} className={navStyle.menuLink}>
           Home
         </a>
-        <a href="#" onClick={onClose} className={navStyle.menuLink}>
+        <a href="#About" onClick={onClose} className={navStyle.menuLink}>
           About Me
         </a>
-        <a href="#" onClick={onClose} className={navStyle.menuLink}>
+        <a href="#portfolioSection" onClick={onClose} className={navStyle.menuLink}>
           Portfolio
         </a>
-        <a href="#" onClick={onClose} className={navStyle.menuLink}>
+        <a href="#services" onClick={onClose} className={navStyle.menuLink}>
           Services
         </a>
         <a
-          href="#About"
+          href="#contact"
           className={navStyle.menuLink}
           onClick={onClose}
         >

@@ -45,7 +45,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className={s.contInf}>
+          <div id="contact" className={s.contInf}>
             <div className={s.contInfTitle}>
               <img src={introductIcon} alt="introduction" />
               <span className={s.contInfTextTitle}>Contact Information</span>
