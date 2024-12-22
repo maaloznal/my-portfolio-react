@@ -1,5 +1,5 @@
 import s from "./s.module.css";
-import imgArrow from "../../../public/knowmore.png";
+// import imgArrow from "../../../public/knowmore.png";
 import imageProfil from "../../../public/photoProfil.png";
 import introductIcon from "../../../public/introductIcon.svg";
 import SocMedia from "../SocMedia/SocMedia";
@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <a className={s.servicesA} href="#About">
           <div className={s.servicesDivA}>
-            <img src={imgArrow} alt="arrowIcon" />
+          <span>Know More {'\u2192'}</span>
           </div>
         </a>
       </div>
