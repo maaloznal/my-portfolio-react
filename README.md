@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+```markdown
+# Портфолио
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Запуск проекта
+Для запуска используйте команду:
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Описание сайта
+Сайт представляет собой портфолио, который включает в себя различные компоненты, такие как проекты, отзывы, список технологий и часто задаваемые вопросы (FAQ).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Компоненты и структура
+- Сайт разделен на логические компоненты, что упрощает управление и поддержку.
+- Для стилизации компонентов используются CSS-модули.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Использование данных
+- Повторяющиеся элементы, такие как часто задаваемые вопросы, проекты в портфолио, отзывы клиентов и список технологий, отображаются с помощью метода `map`.
+
+## Темизация
+- Реализована возможность переключения между светлой и тёмной темой.
+- Созданы соответствующие стили и механизмы переключения тем.
+
+## Адаптивность
+- Обеспечен адаптивный дизайн страницы с использованием media-запросов.
+- Сайт корректно отображается на всех типах устройств.
+
+## Анимация
+- Использована анимация и переходы для улучшения пользовательского опыта.
+
+## Примечания
+### Использование данных:
+1. **Стек технологий**: Данные со стеком технологий получены по HTTP-запросу с сервера `MOKKY.DEV` и отображены на странице с помощью метода `map`.
+2. **Звёзды пользователя**: Количество отображаемых звёзд пользователя зависит от числа, указанного в данных отзывов, и динамически обновляется.
+3. **Кнопки переключения**: Проработана логика кнопок переключения для переключения проектов и отзывов.
+
+### Массив FAQ
+- Массив часто задаваемых вопросов (FAQ) разделён на две части с помощью метода `slice`.
 ```
