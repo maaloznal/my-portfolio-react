@@ -22,7 +22,9 @@ const Faqs = () => {
     <div className={s.FaqsSection}>
       <div className={s.FaqsTitleContiner}>
         <div className={s.FaqsTitleText}>FAQ’s</div>
-        <div className={s.FaqsTitleMainText}>Frequently Asked Questions</div>
+        <div className={s.FaqsTitleMainText}>
+          <span>Frequently Asked Questions</span>
+        </div>
       </div>
       <div className={s.QuestionsMainDiv}>
         {chunkedQuestions.map((chunk, chunkIndex) => (

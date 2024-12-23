@@ -66,7 +66,7 @@
 
 .introductionContainer {
   display: flex;
-  padding: 40px;
+  padding: 20px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -125,7 +125,7 @@
 }
 
 .contInf {
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,8 +239,8 @@
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #2f2f37;
-  background: #1c1c21;
-  color: var(--Absolute-White, #fff);
+  color: var(--text-color);
+  background-color: var(--background-color);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -250,7 +250,7 @@
 }
 
 .socMediaBtn:hover {
-  background: rgb(39, 39, 49);
+  background-color: #9e9e9e;
 }
 
 .servicesA {

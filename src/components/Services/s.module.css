@@ -21,13 +21,23 @@
 
 .servicesText {
   margin-top: 0;
-  color: #fff;
+  color: var(--text-color);
   font-family: Manrope;
   font-size: 58px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.servicesSpan {
+  color: var(--text-color);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
 }
 
 .servicesA {
@@ -37,9 +47,10 @@
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #2f2f37;
-  background: var(--Dark-12, #1c1c21);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .servicesA:hover {
-  background: rgb(39, 39, 49);
+  background-color: #9e9e9e;
 }

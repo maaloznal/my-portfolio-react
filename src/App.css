@@ -32,12 +32,11 @@ body {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
   transition: all 200ms 0ms linear;
   text-decoration: none;
-  color: white;
   box-sizing: border-box;
 }
 

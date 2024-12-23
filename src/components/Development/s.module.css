@@ -53,7 +53,7 @@
 
 .serviceMainSpan {
   display: flex;
-  color: var(--Grey-80, #cacace);
+  color: var(--text-color);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -90,45 +90,49 @@
   flex: 1 0 0;
 }
 
+.serviceDiv:hover {
+  background-color: #394853;
+}
+
 .developmentMainImage {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 @media (max-width: 1024px) {
   .developmentMainContainer {
     grid-template-columns: 1fr;
-    row-gap: 30px; 
+    row-gap: 30px;
   }
 
   .developmentDescriptionTitle {
-    font-size: 36px; 
+    font-size: 36px;
   }
 
   .developmentDescriptionTextParagraph {
-    font-size: 16px; 
+    font-size: 16px;
   }
 
   .serviceDiv {
-    font-size: 16px; 
+    font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
   .developmentDescriptionTitle {
-    font-size: 28px; 
+    font-size: 28px;
   }
 
   .developmentDescriptionTextParagraph {
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   .serviceDiv {
-    font-size: 14px; 
-    padding: 12px 16px; 
+    font-size: 14px;
+    padding: 12px 16px;
   }
 
   .serviceMainSpan {
-    font-size: 16px; 
+    font-size: 16px;
   }
 }

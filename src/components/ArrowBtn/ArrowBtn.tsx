@@ -1,7 +1,7 @@
 import s from "./s.module.css";
 import PortfolioArrowRight from "../../../public/PortfolioArrowRight.svg";
 import PortfolioArrowLeft from "../../../public/PortfolioArrowLeft.svg";
-import viewServicesBtn from "../../../public/ViewAllServices.png";
+
 
 interface ArrowBtnProps {
   onLeftClick: () => void;
@@ -42,14 +42,11 @@ const ArrowBtn: React.FC<ArrowBtnProps> = ({
           />
         </button>
       </div>
-      <a
-        className={s.PhotoWorkBtnViewServicesA}
-        href="https://github.com/maaloznal"
-      >
-        <div className={s.PhotoWorkBtnViewServices}>
-          <img src={viewServicesBtn} alt="View Services" />
-        </div>
-      </a>
+      <a className={s.servicesA} href="https://github.com/maaloznal">
+          <div className={s.servicesDivA}>
+            <span className={s.servicesSpan}>View All Services {"\u2192"}</span>
+          </div>
+        </a>
     </div>
   );
 };

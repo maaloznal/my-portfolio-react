@@ -27,7 +27,7 @@
 }
 
 .FaqsTitleMainText {
-  color: var(--Absolute-White, #fff);
+  color: var(--text-color);
   font-family: Manrope;
   font-size: 58px;
   font-style: normal;

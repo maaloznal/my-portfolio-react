@@ -1,5 +1,4 @@
 import s from "./s.module.css";
-import viewServicesBtn from '../../../public/ViewAllServices.png'
 
 const Services = () => {
   return (
@@ -9,9 +8,9 @@ const Services = () => {
         <h2 className={s.servicesText}>My Development Services</h2>
       </div>
       <div className={s.servicesBtnMainDiv}>
-        <a className={s.servicesA} href="#">
+        <a className={s.servicesA} href="https://github.com/maaloznal">
           <div className={s.servicesDivA}>
-            <img src={viewServicesBtn} alt="img" />
+            <span className={s.servicesSpan}>View All Services {"\u2192"}</span>
           </div>
         </a>
       </div>
