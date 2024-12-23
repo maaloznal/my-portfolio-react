@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import s from './s.module.css'
 
 interface ThemeSwitcherProps {
-  theme: string,
+  theme: string;
   setTheme: (theme: string) => void;
 }
 
@@ -11,10 +12,13 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ theme, setTheme }) => {
   }, [theme]);
 
   return (
-    <button onClick={() => setTheme(theme === "light-theme" ? "" : "light-theme")}>
-      Toggle Theme
+    <button
+      className={s.themeToggleButton}
+      onClick={() => setTheme(theme === "light-theme" ? "" : "light-theme")}
+    >
+      {theme === "light-theme" ? "🌙" : "☀️"}
     </button>
-  )
+  );
 };
 
-export default ThemeSwitcher
+export default ThemeSwitcher;

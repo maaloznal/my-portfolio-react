@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #9e9e9e; 
+  background-color: #9e9e9e;
 }
 
 @media (min-width: 950px) {
@@ -46,6 +46,7 @@ nav a:hover {
     flex-direction: column;
     z-index: 100;
     align-items: center;
+    background: #b3b2b7;
   }
 
   .mobileMenu.open {
@@ -53,7 +54,7 @@ nav a:hover {
   }
 
   .menuLink {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;

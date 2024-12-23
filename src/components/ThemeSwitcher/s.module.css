@@ -1,0 +1,21 @@
+.themeToggleButton {
+  background-color: var(--link-color); 
+  color: var(--text-color); 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.themeToggleButton:hover {
+  background-color: var(--link-color); 
+  transform: scale(1.05); 
+}
+
+.themeToggleButton :active {
+  transform: scale(0.95); 
+}

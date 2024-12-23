@@ -1,4 +1,7 @@
-.toggletheme{
+.toggletheme {
   display: flex;
-  padding: 25px 0;
+  position: fixed;
+  top: 6%;
+  right: 18%;
+  z-index: 100;
 }

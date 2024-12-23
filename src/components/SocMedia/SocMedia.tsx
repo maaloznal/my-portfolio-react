@@ -6,15 +6,21 @@ import tt from "../../../public/twitter.svg";
 const SocMedia = () => {
   return (
     <div className={s.socMedia}>
-      <div className={s.iconSocMedia}>
-        <img src={fb} alt="fb" />
-      </div>
-      <div className={s.iconSocMedia}>
-        <img src={ln} alt="ln" />
-      </div>
-      <div className={s.iconSocMedia}>
-        <img src={tt} alt="tt" />
-      </div>
+      <a href="№">
+        <div className={s.iconSocMedia}>
+          <img src={fb} alt="fb" />
+        </div>
+      </a>
+      <a href="№">
+        <div className={s.iconSocMedia}>
+          <img src={ln} alt="ln" />
+        </div>
+      </a>
+      <a href="№">
+        <div className={s.iconSocMedia}>
+          <img src={tt} alt="tt" />
+        </div>
+      </a>
     </div>
   );
 };

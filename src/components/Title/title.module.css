@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+.mySvg {
+  fill: var(--svg-fill-color);
+  stroke: var(--svg-stroke-color);
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
 .title {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +23,7 @@
 .imagetitle {
   position: absolute;
   top: 0;
-  right: calc(47% - 81px);
+  right: calc(49% - 81px);
   max-width: 100%;
   height: auto;
   z-index: 1;

@@ -103,11 +103,11 @@
   transition: transform 0.3s ease;
   padding: 14px;
   border-radius: 100px;
-  border: 1px solid var(--Dark-12, #1c1c21);
+  border: 1px solid var(--Dark-12, #8d8da8);
 }
 
 .ArrowIconDiv:hover {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #9e9e9e;
   transition: all 200ms 0ms linear;
 }
 

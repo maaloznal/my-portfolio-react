@@ -17,7 +17,7 @@ const Title = () => {
             <LetsWork />
           </div>
         </div>
-        <img className={titleStyle.imagetitle} src={imageTitle} alt="image" />
+        <img className={`${titleStyle.mySvg} ${titleStyle.imagetitle}`} src={imageTitle} alt="image" />
       </div>
     </div>
   );

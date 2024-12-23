@@ -62,7 +62,7 @@
 }
 
 .LinksElemDiv a {
-  color: var(--Grey-95, #f2f2f3);
+  color: var(--text-color);
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -70,6 +70,10 @@
   line-height: normal;
   text-transform: uppercase;
   border-bottom: 1px solid var(--Dark-20, #2f2f37);
+}
+
+.LinksElemDiv a:hover{
+  border-bottom: 1px solid #7a4444;
 }
 
 .FooterImgDiv {
