@@ -54,11 +54,11 @@ const About = () => {
               <div className={s.contData}>
                 <div className={s.contDataEmail}>
                   <span className={s.emailTitle}>Email</span>
-                  <p className={s.emailContact}>damienbraun@gmail.com</p>
+                  <p className={s.emailContact}>facebookbaga05@gmail.com</p>
                 </div>
                 <div className={s.contDataNumber}>
-                  <span className={s.numberTitle}>Phone Number</span>
-                  <p className={s.numberContact}>+00 000000000</p>
+                  <span className={s.numberTitle}>Telegram</span>
+                  <p className={s.numberContact}>@nick_name35</p>
                 </div>
               </div>
               <div className={s.contDataSocMedia}>
